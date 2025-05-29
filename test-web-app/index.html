@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Price Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <h2>Popular Stocks</h2>
+            <table id="stocks-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Symbol</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Stock rows will be injected here -->
+                </tbody>
+            </table>
+        </div>
+        <div class="right-panel">
+            <div class="graph-block">
+                <canvas id="stock-graph"></canvas>
+            </div>
+            <div class="suggestions-block" id="suggestions-block">
+                <!-- Suggestions will be injected here -->
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

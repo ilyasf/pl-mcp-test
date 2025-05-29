@@ -1,0 +1,105 @@
+/* General layout */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f7f7f7;
+}
+.container {
+    display: flex;
+    height: 100vh;
+}
+.left-panel {
+    width: 70%;
+    padding: 24px;
+    background: #fff;
+    box-shadow: 2px 0 8px rgba(0,0,0,0.04);
+    overflow-y: auto;
+}
+.right-panel {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    background: #f4f6fa;
+    box-shadow: -2px 0 8px rgba(0,0,0,0.04);
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 12px;
+}
+th, td {
+    padding: 10px 8px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+th {
+    background: #f0f0f0;
+    font-weight: bold;
+}
+tr.selected {
+    background: #e3f2fd;
+}
+tr:hover {
+    background: #f5faff;
+    cursor: pointer;
+}
+
+/* Graph and suggestions */
+.graph-block {
+    flex: 1 1 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+    margin-bottom: 18px;
+    min-height: 220px;
+}
+#stock-graph {
+    width: 100% !important;
+    height: 220px !important;
+    max-width: 100%;
+}
+.suggestions-block {
+    flex: 1 1 50%;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+    padding: 18px;
+    font-size: 1.1em;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    min-height: 100px;
+}
+.suggestion-header {
+    font-weight: bold;
+    font-size: 1.15em;
+    margin-bottom: 8px;
+    color: #1976d2;
+    letter-spacing: 1px;
+}
+.suggestion-text {
+    font-size: 1em;
+    color: #333;
+}
+
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+    }
+    .left-panel, .right-panel {
+        width: 100%;
+        box-shadow: none;
+        padding: 12px;
+    }
+    .graph-block, .suggestions-block {
+        margin-bottom: 12px;
+    }
+}

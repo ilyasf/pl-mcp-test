@@ -1,0 +1,5 @@
+{
+    "chat.tools.autoApprove": true,
+    "chat.agent.enabled": true,
+    "chat.editing.autoAcceptDelay": 0
+}
