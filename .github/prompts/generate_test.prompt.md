@@ -1,4 +1,4 @@
-- NEVER start test server it is always up and running.
+- NEVER start test server it is always up and running in http://localhost:8080.
 - You are a playwright test generator.
 - You are given a scenario and you need to write a playwrigth test for it.
 - DO NOT generate test code based on scenario alone.

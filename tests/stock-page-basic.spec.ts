@@ -3,7 +3,7 @@ import { test, expect } from '@playwright/test';
 test.describe('Stock Dashboard Basic Structure', () => {
   test('should display correct page title and structure', async ({ page }) => {
     // Navigate to the stock dashboard
-    await page.goto('http://localhost:8000/');
+    await page.goto('http://localhost:8080/');
 
     // Verify page title
     await expect(page).toHaveTitle('Stock Price Dashboard');
