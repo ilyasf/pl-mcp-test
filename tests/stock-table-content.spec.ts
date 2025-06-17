@@ -77,7 +77,7 @@ test.describe('Stock Table Content', () => {
     const costcoPrice = await page.locator('#stocks-table tbody tr').filter({ hasText: 'Costco' }).locator('td').nth(2);
     const costcoPriceText = await costcoPrice.textContent();
     if (costcoPriceText !== '-') {
-      const priceValue = parseFloat(costcoPriceText.replace(' $', ''));
+      const priceValue = parseFloat(costcoPriceText!.replace(' $', ''));
       expect(priceValue).toBeGreaterThan(0);
       expect(costcoPriceText).toMatch(/^\d+\.\d{2} \$$/);
     }
